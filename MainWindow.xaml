@@ -1,0 +1,174 @@
+﻿<Window x:Class="CRUDNotesApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUDNotesApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="None" ImageSource="1508669.jpg"/>
+        </Grid.Background>
+        <Button x:Name="CreateNoteButton" Content="Create Note" HorizontalAlignment="Left" Margin="55,145,0,0" VerticalAlignment="Top" Width="121" FontFamily="Bradley Hand ITC" FontSize="18" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Click="CreateNoteButton_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-7.228"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label x:Name="MainLabel" Content="CRUD Notes Application" HorizontalAlignment="Left" Margin="29,23,0,0" VerticalAlignment="Top" Width="305" FontFamily="Viner Hand ITC" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-7.33"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="MainMenuLabel" Content="Main Menu" HorizontalAlignment="Left" Margin="55,82,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" FontFamily="Viner Hand ITC" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-7.151"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="ReadNotesButton" Content="Read notes" HorizontalAlignment="Left" Margin="55,198,0,0" VerticalAlignment="Top" Width="121" FontFamily="Bradley Hand ITC" FontSize="18" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Click="ReadNotesButton_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-7.149"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="DeleteNotesButton" Content="Delete Notes" HorizontalAlignment="Left" Margin="60,301,0,0" VerticalAlignment="Top" Width="121" FontFamily="Bradley Hand ITC" FontSize="18" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Click="DeleteNotesButton_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-7.628"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="QuitButton" Content="Quit" HorizontalAlignment="Left" Margin="38,354,0,0" VerticalAlignment="Top" Width="121" FontFamily="Bradley Hand ITC" FontSize="24" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FFE42424" Click="QuitButton_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-7.333"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="ActionButton" Content="action" HorizontalAlignment="Left" Margin="526,321,0,0" VerticalAlignment="Top" Width="121" FontFamily="Bradley Hand ITC" FontSize="16" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Click="ActionButton_Click" Visibility="Collapsed">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-8.691"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="UpdateNoteButton" Content="Update Note" HorizontalAlignment="Left" Margin="60,251,0,0" VerticalAlignment="Top" Width="121" FontFamily="Bradley Hand ITC" FontSize="18" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Click="UpdateNoteButton_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-7.456"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label x:Name="NotesLabel" Content="Notes:" HorizontalAlignment="Left" Margin="405,62,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Width="262" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-5.471"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <ListBox x:Name="NotesListBox" HorizontalAlignment="Left" Height="226" Margin="420,88,0,0" VerticalAlignment="Top" Width="293" Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" FontFamily="Bradley Hand ITC" FontSize="16" FontWeight="Bold" Visibility="Hidden">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-7.362"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+        <Button x:Name="CloseButton" Content="Close" HorizontalAlignment="Left" Margin="419,333,0,0" VerticalAlignment="Top" Width="73" FontFamily="Bradley Hand ITC" FontSize="16" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FFD42A2A" Click="CloseButton_Click" Visibility="Collapsed">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-6.627"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBlock x:Name="ReadNoteBlock" HorizontalAlignment="Left" Height="208" Margin="419,96,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="171" RenderTransformOrigin="0.5,0.5" Visibility="Hidden" FontFamily="Bradley Hand ITC" FontSize="16">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-5.679"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Label x:Name="NewNoteLabel" Content="New note name:" HorizontalAlignment="Left" Margin="369,71,0,0" VerticalAlignment="Top" Width="131" Background="{x:Null}" FontSize="16" FontFamily="Viner Hand ITC" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-4.722"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="NewNoteName" HorizontalAlignment="Left" Height="23" Margin="505,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="225" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="14" FontFamily="Ink Free" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-6.034"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label x:Name="NewTextLabel" Content="Write text here:" HorizontalAlignment="Left" Margin="371,125,0,0" VerticalAlignment="Top" Width="131" Background="{x:Null}" FontSize="14" FontFamily="Viner Hand ITC" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-4.722"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="NewText" HorizontalAlignment="Left" Height="180" Margin="496,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175" Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" FontSize="14" FontFamily="Ink Free" Visibility="Collapsed">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-4.139"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+    </Grid>
+</Window>

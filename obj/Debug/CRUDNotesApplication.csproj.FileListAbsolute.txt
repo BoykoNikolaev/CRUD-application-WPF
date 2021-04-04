@@ -1,0 +1,15 @@
+C:\Users\nikbu\source\repos\CRUDNotesApplication\CRUDNotesApplication\bin\Debug\CRUDNotesApplication.exe.config
+C:\Users\nikbu\source\repos\CRUDNotesApplication\CRUDNotesApplication\bin\Debug\CRUDNotesApplication.exe
+C:\Users\nikbu\source\repos\CRUDNotesApplication\CRUDNotesApplication\bin\Debug\CRUDNotesApplication.pdb
+C:\Users\nikbu\source\repos\CRUDNotesApplication\CRUDNotesApplication\obj\Debug\MainWindow.g.cs
+C:\Users\nikbu\source\repos\CRUDNotesApplication\CRUDNotesApplication\obj\Debug\App.g.cs
+C:\Users\nikbu\source\repos\CRUDNotesApplication\CRUDNotesApplication\obj\Debug\CRUDNotesApplication_MarkupCompile.cache
+C:\Users\nikbu\source\repos\CRUDNotesApplication\CRUDNotesApplication\obj\Debug\CRUDNotesApplication_MarkupCompile.lref
+C:\Users\nikbu\source\repos\CRUDNotesApplication\CRUDNotesApplication\obj\Debug\MainWindow.baml
+C:\Users\nikbu\source\repos\CRUDNotesApplication\CRUDNotesApplication\obj\Debug\CRUDNotesApplication.g.resources
+C:\Users\nikbu\source\repos\CRUDNotesApplication\CRUDNotesApplication\obj\Debug\CRUDNotesApplication.Properties.Resources.resources
+C:\Users\nikbu\source\repos\CRUDNotesApplication\CRUDNotesApplication\obj\Debug\CRUDNotesApplication.csproj.GenerateResource.cache
+C:\Users\nikbu\source\repos\CRUDNotesApplication\CRUDNotesApplication\obj\Debug\CRUDNotesApplication.csproj.CoreCompileInputs.cache
+C:\Users\nikbu\source\repos\CRUDNotesApplication\CRUDNotesApplication\obj\Debug\CRUDNotesApplication.exe
+C:\Users\nikbu\source\repos\CRUDNotesApplication\CRUDNotesApplication\obj\Debug\CRUDNotesApplication.pdb
+C:\Users\nikbu\source\repos\CRUDNotesApplication\CRUDNotesApplication\obj\Debug\CRUDNotesApplication.csprojAssemblyReference.cache
